@@ -1,26 +1,27 @@
-html,
-body {
-    height: 100%;
-    width: 100%;
-    margin: 0;
-    padding: 0;
+body{
+    background-color: blueviolet;
 }
-
-.image-container {
-    display: flex;
+.main-box{
     position: relative;
-    justify-content: center;
-    align-items: center;
+    width: 1020px;
+    height: 600px;
+    margin: 0 auto;
+    
+    background-image: url("img/img1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    
 }
-
-.image {
-    align-items: center;
-    width: clamp(300px, 600px, 900px);
+.image-container {
+    position: relative;
 }
 
 .text-container {
-    position: absolute;
-    background: rgba(117, 190, 111, 0.7);
-    padding: 10px;
-    border: 1px solid #000;
+  display: flex;
+  position: absolute;
+  background: rgba(117, 190, 111, 0.7);
+  padding: 0;
+  margin: 0;
+  z-index: 1000;
 }
